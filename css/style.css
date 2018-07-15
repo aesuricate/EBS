@@ -1,0 +1,196 @@
+body {
+  font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn, .btn-large, .btn-small {
+  text-transform: none;
+}
+
+.lex-green {
+  background-color: #026957;
+  color: #fff;
+}
+
+.lex-green-text {
+  color: #026957;
+}
+
+.lex-dark-green {
+  background-color: #025042;
+  color: #fff;
+}
+
+.lex-dark-green-text {
+  color: #025042;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 0;
+  z-index: 3;
+}
+
+.sticky + .container {
+  padding-top: 36px;
+}
+
+@media screen and (max-width: 992px) {
+  .sticky + .container {
+    padding-top: 110px;
+  }
+  .sticky .left-header, .sticky .right-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sticky + .container {
+    padding-top: 162px;
+  }
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 36px 46px;
+}
+
+.text-center {
+  margin-top: 25vh;
+}
+
+.hero-caption {
+  display: inline;
+}
+
+#down {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+}
+
+#down i {
+  font-size: 70px;
+  line-height: 1.5;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section img, .sep-box {
+  margin: 30px 0
+}
+
+#time {
+  background-size: cover;
+    background-image: url(../img/time_bg.png);
+    background-position: right top;
+}
+
+#time .row {
+  margin-bottom:30vw;
+}
+
+#contact .btn-large {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.blackback {
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#modal {
+  display: none
+}
+
+#modal.active {
+  display: block;
+}
+
+.modalbox {
+  padding: 40px;
+  width: 600px;
+  position: fixed;
+  z-index: 2;
+  top: 10vh;
+  height: 300px;
+  left: calc(50% - 300px)
+}
+
+#modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .text-center {
+    margin-top: 15vh;
+  }
+
+  .hero {
+    padding: 16px 26px;
+    }
+
+  .left-header, .center-header, .right-header {
+      text-align: center;
+      margin: 10px 0;
+  }
+  #time {
+    background-image: url(../img/time_bg2.png);
+    background-position: bottom;
+  }
+  #time .col {
+    text-align: center;
+  }
+
+  .modalbox {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh
+  }
+}
+@media screen and (max-width: 600px) {
+  header .hero-caption {
+    display: none;
+  }
+  header h3 {
+    font-size: 2.5rem;
+  }
+}
