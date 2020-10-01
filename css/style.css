@@ -70,7 +70,6 @@ img {
     background-image: url(/img/unifi.png);
     background-position: right;
     background-size: auto;
-    height: 400px;
     background-repeat: no-repeat;
 }
 
@@ -80,6 +79,10 @@ img {
   }
   .sticky .left-header, .sticky .right-header {
     display: none;
+  }
+  #connect {
+    background-position: bottom;
+    background-position-x: 80px;
   }
 }
 
