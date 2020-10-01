@@ -53,10 +53,18 @@ img {
 }
 
 #network {
-    background-image: url(img/network.png);
+    background-image: url(/img/network.png);
     background-position: center;
     background-size: cover;
     height: 400px;
+}
+
+#connect {
+    background-image: url(/img/unifi.png);
+    background-position: right;
+    background-size: auto;
+    height: 400px;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 992px) {
