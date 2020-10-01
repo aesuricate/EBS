@@ -59,6 +59,13 @@ img {
     height: 400px;
 }
 
+#network + .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    margin-top: 90px;
+}
+
 #connect {
     background-image: url(/img/unifi.png);
     background-position: right;
