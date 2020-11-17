@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 .btn, .btn-large, .btn-small {
   text-transform: none;
 }
